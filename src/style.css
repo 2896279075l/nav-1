@@ -120,10 +120,6 @@ body {
     cursor: default;
 }
 
-.siteList .site:hover>.close {
-    display: block;
-}
-
 .siteList .site .close .icon {
     width: 9px;
     height: 9px;
@@ -177,11 +173,17 @@ body {
     .siteList .site {
         margin-right: 25px;
     }
+    .siteList .site:hover>.close {
+        display: block;
+    }
 }
 
 @media (max-width: 500px) {
     .siteList {
         margin: 20px;
         justify-content: space-between;
+    }
+    .siteList .site>.close {
+        display: block;
     }
 }
